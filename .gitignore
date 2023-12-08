@@ -9,6 +9,10 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 web-build/
+image
+ccccccccc
+patches
+%ProgramData%
 
 # macOS
 .DS_Store

@@ -1,10 +1,40 @@
 {
   "expo": {
     "scheme": "acme",
-    "web": {
-      "bundler": "metro"
+    "name": "Hells Kitchen",
+    "slug": "Hells-Kitchen",
+    "version": "1.0.0",
+    "platforms": ["android"],
+    "orientation": "portrait",
+    "icon": "./assets/logo/logo4.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#539357"
     },
-    "name": "my-app",
-    "slug": "my-app"
+    "extra": {
+      "eas": {
+        "projectId": "b9261136-6a5e-451e-b8d8-feee6fcf5302"
+      },
+      "supportsRTL": true
+    },
+    "android": {
+      "package": "com.men3m74.myapp",
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "custom photos permission",
+          "//": "Disables the microphone permission",
+          "microphonePermission": false
+        }
+      ],
+      "expo-localization"
+    ]
   }
 }
